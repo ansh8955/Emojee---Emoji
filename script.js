@@ -33,9 +33,15 @@ function displayResult(searchQuery = "") {
     let new_aliases = document.createElement("td");
     let new_desc = document.createElement("td");
 
+    new_row.classList.add("rowstyle");
+
     new_emoji.innerHTML = e.emoji;
     new_aliases.innerHTML = e.aliases;
     new_desc.innerHTML = e.description;
+
+    new_emoji.classList.add("emoji");
+        new_aliases.classList.add("aliases");
+        new_desc.classList.add("desc");
 
     new_row.appendChild(new_emoji);
     new_row.appendChild(new_aliases);
